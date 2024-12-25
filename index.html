@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container w-75">
+          <!-- Logo -->
+          <a class="navbar-brand text-white d-flex gap-2" href="#">
+            <div class="logo">
+              <img
+                width="45"
+                height="25"
+                src="./images/logo@2x.png"
+                alt="logo"
+              />
+            </div>
+            <div class="logo-content">
+              <h1 class="fs-6 fw-bold m-0">Weather</h1>
+              <p class="m-0">tagline goes here</p>
+            </div>
+          </a>
+
+          <!-- Navbar Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-burger text-white"></i>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section>
+      <div class="hero pt-5">
+        <div class="container w-75">
+          <div class="d-flex find-location position-relative" role="search">
+            <input
+              autocomplete="off"
+              id="search-location"
+              class="w-100 rounded-5 ms-2"
+              type="search"
+              placeholder="Find your location.."
+              aria-label="Search"
+            />
+            <div class="suggestions d-none"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forecast Table -->
+      <div class="forecast-table w-75 m-auto">
+        <div class="forecast-container">
+          <!-- Today's Weather -->
+          <div class="card today text-bg-light mb-3" style="min-width: 33.33%">
+            <div
+              class="card-header d-flex justify-content-between align-items-baseline"
+            >
+              <span class="day"></span>
+              <span class="month"></span>
+            </div>
+            <div class="card-body mt-3"></div>
+          </div>
+
+          <!-- Tomorrow's Weather -->
+          <div class="card text-bg-light mb-3" style="min-width: 33.33%">
+            <div
+              class="card-header text-center"
+              style="background-color: rgb(34, 37, 49)"
+            >
+              <span class="forecast-day"></span>
+            </div>
+            <div
+              class="card-body forecast text-center"
+              style="background-color: rgb(38, 41, 54)"
+            ></div>
+          </div>
+
+          <!-- Day After Tomorrow's Weather -->
+          <div class="card text-bg-light mb-3" style="min-width: 33.33%">
+            <div class="card-header text-center">
+              <span class="forecast-day"></span>
+            </div>
+            <div class="card-body forecast text-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+      <div class="container w-75">
+        <!-- Contact Section -->
+        <div
+          class="d-flex contact-section justify-content-between align-items-baseline"
+        >
+          <!-- Subscription Input -->
+          <div class="d-flex w-75 subscribe position-relative">
+            <input
+              class="w-100 rounded-5 ms-2"
+              type="email"
+              placeholder="Enter your Email to Subscribe.."
+              aria-label="email"
+            />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="soical-icons">
+            <span class="fa-stack" style="--fa-inverse: #1da1f2">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+
+            <span class="fa-stack" style="--fa-inverse: #1da1f2">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+
+            <span class="fa-stack" style="--fa-inverse: #1da1f2">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
+            </span>
+
+            <span class="fa-stack" style="--fa-inverse: #1da1f2">
+              <i class="fa-solid fa-circle fa-stack-2x"></i>
+              <i class="fab fa-google-plus-g fa-stack-1x fa-inverse"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Footer Text -->
+        <p class="mt-4 ms-3">
+          Copyright 2014 Company name. Designed by Mahmoud Dardier. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
