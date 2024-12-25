@@ -8,9 +8,9 @@ The 3 Days Weather application is a user-friendly web app that provides a weathe
 
 ## Screenshots
 
-![Home Page](screenshots/home-page.png)
+![Home Page](screenshoots/home-page.png)
 
-![Search Suggestions](screenshots/search-suggestions.png)
+![Search Suggestions](screenshoots/search-suggestions.png)
 
 ---
 
